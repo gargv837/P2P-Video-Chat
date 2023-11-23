@@ -35,11 +35,12 @@ Users can gracefully exit the video chat room with a hang-up button.
 Automatically handles room cleanup when a user leaves.
 
 ## Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: Node.js, Express.js
-WebSockets: Socket.IO
-WebRTC Library: RTCPeerConnection
-External Libraries: Font Awesome (for control icons)
+
+### Frontend: HTML, CSS, JavaScript
+### Backend: Node.js, Express.js
+### WebSockets: Socket.IO
+### WebRTC Library: RTCPeerConnection
+### External Libraries: Font Awesome (for control icons)
 
 ## Usage Scenario
 Ideal for business meetings, virtual conferences, or casual catch-ups with friends and family.
