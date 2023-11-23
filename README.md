@@ -80,3 +80,7 @@ Step-6: In the server.js file you can enter the port number as per your device
 const PORT = process.env.PORT || 5501;
 ```
 
+Step-7: Run Server
+```
+npm start
+```
