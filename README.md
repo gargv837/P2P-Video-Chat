@@ -4,18 +4,23 @@ Welcome to my Video Chat Project. The Real-Time Video Chat App enables seamless,
 
 Steps to run the Project on local device:
 
-Step-1: Run npm init command to create package.json file
+Step-1: Open a Folder in vs Code and clone this repo
+```
+git clone https://github.com/gargv837/P2P-Video-Chat
+```
+
+Step-2: Run npm init command to create package.json file
 ```
 npm init
 ```
 
-Step-2: Install the packages needed
+Step-3: Install the packages needed
 
 ```
 npm install node express socket.io nodemon ejs
 ```
 
-Step-3: Go to package.json file and change its script
+Step-4: Go to package.json file and change its script
 ```
 "scripts": {
     "start": "nodemon",
