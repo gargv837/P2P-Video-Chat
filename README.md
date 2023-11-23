@@ -19,7 +19,7 @@ Step-3: Go to package.json file and change its script
 ```
 "scripts": {
     "start": "nodemon",
-  }
+}
 ```
 
 Step-4: In the server.js file you can enter the port number as per your device
