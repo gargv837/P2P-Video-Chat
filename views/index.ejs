@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Veedeo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/index.css"
+    />
+    <script src="https://kit.fontawesome.com/6510466b6c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="videos">
+      <video class="video-player" id="user-1" autoplay playsinline></video>
+      <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+      
+    </div>
+
+    <div class="footer">
+      <div class="utils" id="controls">
+
+          <div class="audio control-container" id="audio-btn">
+              <i class="fas fa-microphone"></i>
+          </div>
+          <div class="novideo control-container" id="camera-btn">
+              <i class="fas fa-video"></i>
+          </div>
+          <div class="screenshare tooltip control-container" id="screen-btn">
+              <i class="fas fa-desktop"></i>
+          </div>
+          <div class="cutcall tooltip control-container" id="hang-up-btn">
+              <i class="fas fa-phone-slash"></i>
+          </div>
+        </div>
+    <div class="copycode-cont">
+      <div class="roomcode"></div>
+      <button class="copycode-button" onclick="CopyClassText()">Copy Code</button>
+    </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+  </body>
+</html>

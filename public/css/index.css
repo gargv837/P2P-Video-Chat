@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #3498db;
+  margin: 0;
+}
+
+#videos{
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.video-player{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  background-color: black;
+  width: 70%;
+  height: 70%;
+  border: 2px solid #4ecca3;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+  object-fit: cover;
+}
+
+#user-2{
+  display: none;
+}
+
+.smallframe{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 150px;
+  width: 280px;
+  border-radius: 5px;
+  border:2px solid #4ecca3;
+  -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+  box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+  z-index: 999;
+}
+
+.control-container {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50% 2px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+#camera-btn:hover, #audio-btn:hover, #hang-up-btn:hover, #screen-btn:hover{
+  background-color: grey;
+}
+
+.share{
+  background-color: #6d4ecc;
+}
+
+.off {
+  background-color: red !important;
+}
+
+.utils{
+  margin: 0 auto;
+  position: absolute;
+  left: 43%;
+  bottom: 15px;
+  display: flex;
+  margin-top: 50px;
+  width: 180px;
+  height: 40px;
+  background-color: #4ecca3;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.roomcode{
+  color: #4ecca3;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 3px solid #4ecca3;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.copycode-cont{
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  display: flex;
+}
+
+.copycode-button{
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  color: white;
+  background-color: #4ecca3;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.copycode-button:hover{
+  cursor: pointer;
+}
+
+.copycode-button:focus{
+  outline: none;
+}
