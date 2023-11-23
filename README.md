@@ -52,25 +52,30 @@ Step-1: Open a Folder in vs Code and clone this repo
 git clone https://github.com/gargv837/P2P-Video-Chat
 ```
 
-Step-2: Run npm init command to create package.json file
+Step-2: Open the P2P-Video-Chat folder in Terminal
+```
+cd P2P-Video-Chat
+```
+
+Step-3: Run npm init command to create package.json file
 ```
 npm init
 ```
 
-Step-3: Install the packages needed
+Step-4: Install the packages needed
 
 ```
 npm install node express socket.io nodemon ejs
 ```
 
-Step-4: Go to package.json file and change its script
+Step-5: Go to package.json file and change its script
 ```
 "scripts": {
     "start": "nodemon",
 }
 ```
 
-Step-4: In the server.js file you can enter the port number as per your device
+Step-6: In the server.js file you can enter the port number as per your device
 ```
 const PORT = process.env.PORT || 5501;
 ```
