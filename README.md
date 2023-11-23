@@ -71,7 +71,7 @@ npm install node express socket.io nodemon ejs
 Step-5: Go to package.json file and change its script
 ```
 "scripts": {
-    "start": "nodemon",
+    "start": "nodemon"
 }
 ```
 
