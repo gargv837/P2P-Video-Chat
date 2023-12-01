@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(queryString);
 const room = urlParams.get("room");
 
 if (!room) {
-  window.location = "lobby.html";
+  window.location = "/error";
 } else {
   const constraints = {
     video: {
@@ -75,7 +75,7 @@ if (!room) {
           "sendMessage",
           JSON.stringify({
             room,
-            type: "candidate",
+            type: "new-ice-candidate",
             candidate: event.candidate,
           })
         );
@@ -145,9 +145,10 @@ if (!room) {
       await addAnswer(message.answer);
     }
 
-    if (message.type === 'candidate') {
+    if (message.type === 'new-ice-candidate') {
       if (peerConnection) {
-        await peerConnection.addIceCandidate(message.candidate);
+        const msgCandidate = new RTCIceCandidate(message.candidate);
+        await peerConnection.addIceCandidate(msgCandidate);
       }
     }
   };
