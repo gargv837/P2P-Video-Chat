@@ -18,6 +18,13 @@
                     <button type="submit">Join or Create Room</button>
                 </form>
             </div>
+            <% if (typeof message !== 'undefined') { %>
+                <script>
+                    window.onload = function() {
+                        window.alert("<%= message %>");
+                    };
+                </script>
+            <% } %>
         </div>
     </main>
     <script>
