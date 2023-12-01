@@ -89,6 +89,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get('/error', (req, res) =>{
+    res.render('lobby', {message : 'Room Not Found'});
+})
+
 server.listen(PORT, () => {
   console.log(`listening on PORT:${PORT}`);
 });
